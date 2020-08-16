@@ -5,33 +5,29 @@ html{
 margin: 0;
 padding: 0;
 }
-
-
+.box{
+  background-color: lightpink;
+}
+.name{
+  background-color: black;
+  color: white;
+  float: right;
+}
+.1st,.2nd,.3rd {
+  width: 100/3%;
+}
 
 
 @media only screen and (max-width: 768px) {
-    .textdata {
-      text-align: center;
-      position: absolute;
-      color: white;
-      font-family: -webkit-body;
-      font-size: 180%;
-      top: 55%;
+    .1st,.2nd {
+      width: 50%;
+    }
+    .3rd{
       width: 100%;
-      letter-spacing: 7px;
-      text-shadow: 0 0 10px #000;
     }
   }
 @media only screen and (max-width: 768px) {
-    .textdata {
-      text-align: center;
-      position: absolute;
-      color: white;
-      font-family: -webkit-body;
-      font-size: 180%;
-      top: 55%;
-      width: 100%;
-      letter-spacing: 7px;
-      text-shadow: 0 0 10px #000;
-    }
+  .1st,.2nd,.3rd {
+    width: 100%;
+  }
   }
