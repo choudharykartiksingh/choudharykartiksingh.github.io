@@ -10,39 +10,51 @@ h1{
 }
 .box{
   background-color: lightpink;
-  height: 300px;
+  /* height: 300px; */
   width: 31%;
   float: left;
   margin: 1%;
   position: relative;
+  padding-bottom: 10px;
+  border: solid black 1px;
+
 }
 .name{
+  text-align: center;
   background-color: black;
   color: white;
   
   padding: 5px;
-  position: relative;
+  /* position: relative; */
   top: 0;
   right: 0;
   font-size: 20px;
   float: right;
+  margin-bottom: 1px;
+  width: 30%;
 }
-
+.data{
+  margin-top: 35px;
+  padding: 5px;
+}
 /* .1st,.2nd,.3rd {
   width: 33%;
 } */
 
 
-@media only screen and (max-width: 768px) {
-    .1st,.2nd {
-      width: 50%;
+@media only screen and (max-width: 921px) {
+    .pehla,.doosra {
+      width: 48%;
+      margin: 1%;
     }
-    .3rd{
-      width: 100%;
+    .teesra{
+      width: 98%;
+      margin: 1%;
     }
   }
 @media only screen and (max-width: 768px) {
-  .1st,.2nd,.3rd {
-    width: 100%;
+  .pehla,.doosra,.teesra {
+    width: 98%;
+    margin: 1%;
   }
   }
