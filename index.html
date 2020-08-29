@@ -15,116 +15,161 @@
   html {
     margin: 0;
     padding: 0;
+    /* background-color: black; */
   }
 
   body {
     margin: 0;
     padding: 0;
-    background-color: black;
-  }
-
-  #mainbox {
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: white;
-    height: 95%;
-    width: 95%;
+    background-color: black!important;
+    /* background-image: url(bg2.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:contain;
+    max-width: 565px;
     margin: auto;
-    margin-top: 15px;
+    font-size: larger;
+    font-weight: 500;
+  }
+  
+  .traingle{
+    position: absolute;
+    top: 20px;
+    /* left: 50%; */
+    margin: auto;
+    /* transform: translate(-50%,-50%); */
+    background-color: white;
+    width: 565px;
+    height: 400px;
     text-align: center;
+    overflow: hidden;
+
+  }
+  .traingle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: turquoise;
+    transform-origin: top right;
+    transform: rotate(45deg);
+
   }
 
-  #profilepic img {
-    margin-top: 50px;
-    height: 100px;
-    width: 100px;
+  /* #profilepic img {
+    margin-top: 70px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    border: solid red 5px;
-  }
+    border: solid turquoise 5px;
+  } */
   #box{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    /* border-radius: 20px;
-    background-color: grey; */
+    /* margin-top: 30px; */
+    /* margin-bottom: 30px; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* border-radius: 20px; */
+    background-color: grey;
     
   }
   #box img{
-    height: 40px;
-    width: 40px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     float: left;
+    background-color: white;
     /* display: inline; */
   }
 
   #egg{
-    border-radius: 20px;
+    border-radius: 40px;
     background-color: gray;
-    width: 80px;
+    width: 160px;
     margin: auto;
-    height: 40px;
+    height: 80px;
   }
-
+#callingicon::before{
+margin-top: 15px;
+}
   #footer{
-    background-color: red;
+    /* background-color: red; */
+    position: fixed;
+    bottom: 0;
+    
   }
+.icon{
+  width: 20px!important;
+  height: 20px!important;
+  border-radius: 50%;
+  background-color: white;
+}
+.footicon{
+  font-size: 30px;
+}
+.footericon{
+  font-size: 40px;
+}
+
+
   @media only screen and (max-width: 768px) {}
 </style>
 </head>
 
 <body style="text-align: center;">
-  <div id="mainbox">
-
-
+  <div class="traingle">
+    <img style="position: absolute;left: 37%;top:150px;width: 150px;height: 150px;border-radius: 50%;border: 5px solid white;" src="p.jpg">
+  </div>
+  
 
     <div id="design">
-      <h2> there will be design </h2>
     </div>
 
-    <div id="profilepic">
-      <img style="" src="DSC_0440.JPG">
+    <div class="profilepic">
+      <!-- <img style="" src="p.jpg"> -->
     </div>
 
-    <div id="title">
+    <div id="title" style="margin-top:325px;position: relative;background-color: white;">
       Kartik Choudhary <br>
       Saharanpur UP
     </div>
 
-    <div id="detail">
-      Web developer <br>
+    <div id="detail" style="background-color: white;margin-top: 10px;">
+      Django Web developer <br>
       Software developer
     </div>
 
-    <div id="links" class="row row-cols-4">
-      <div id="call" class="col">ca</div>
-      <div id="whatsapp" class="col">wh</div>
-      <div id="email" class="col">em</div>
-      <div id="website" class="col">web</div>
+    <div id="links" class="row row-cols-4 px-5" style="background-color:white;width: 565px;margin: auto;height: 70px;padding-top: 20px;">
+      <div id="call" class="col"><i class="footericon fas fa-phone-square-alt"></i><br> call me</div>
+      <div id="whatsapp" class="col"><i class="footericon fab fa-whatsapp"></i><br> whatsapp</div>
+      <div id="email" class="col"><i class="footericon fas fa-envelope"></i><br> em</div>
+      <div id="website" class="col"><i class="footericon fab fa-chrome"></i><br>web</div>
     </div>
-
-    
-      <div id="box">
+ 
+      <div id="box" style="background-color: white;padding-top: 40px;">
       <div id="egg">
-        <img src="DSC_0440.JPG" alt="">
-        call</div>
-        <div id="designation">
+        <img src="p.jpg" alt=""><span id="callingicon" style="padding-top:15px ;"><i class="footericon fas fa-phone-square-alt" style="padding-top:15px ;"></i></span>
+      </div>
+        <div id="designation" style="margin-top:10px;margin-bottom: 5px;">
           Owner
         </div>
       </div>
       
-      
-      
+        <div>
 
-    <div id="footer" class="row row-cols-5">
-    <div class="col">fb</div>      
-    <div class="col">twitter</div>      
-    <div class="col">insta</div>      
-    <div class="col">yout</div>      
-    <div class="col">other</div>      
-
+        </div>
+    <div id="footer" class="row row-cols-5" style="background-color: turquoise;width: 565px;margin: auto;padding-top: 20px;padding-bottom: 20px;margin-bottom: 10px;">
+      <div id="f1" class="col"><i class="footicon fab fa-facebook"></i></div>
+      <div id="t1" class="col"><i class="footicon fab fa-twitter"></i></div>
+      <div id="i1" class="col"><i class="footicon fab fa-instagram"></i></div>
+      <div id="y1" class="col"><i class="footicon fab fa-y-combinator"></i></div>
+      <div id="y2" class="col"><i class="footicon fab fa-youtube"></i></div>
     </div>
 
 
-  </div>
+  
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -137,8 +182,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/8d501b0414.js" crossorigin="anonymous"></script>
+
 
 
 </body>
-
 </html>
